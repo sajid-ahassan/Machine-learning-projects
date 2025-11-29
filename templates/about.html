@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Recommendation System</title>
+
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+    <link rel="stylesheet" href="/static/style.css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="w-full bg-indigo-300 shadow-lg">
+      <div
+        class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between"
+      >
+        <!-- Logo -->
+        <div class="text-2xl font-bold text-teal-950 pl-[50px]">MovieRec</div>
+
+        <!-- Menu Items -->
+        <ul class="hidden md:flex space-x-8 text-lg pr-[100px]">
+          <li>
+            <a
+              href="#"
+              class="hover:text-emerald-800 transition"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="recommendation.html" class="hover:text-emerald-800 transition"
+              >Recommendations</a
+            >
+          </li>
+          <li>
+            <a href="#" class="hover:text-emerald-800 transition">Genres</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-emerald-800 transition">About</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </body>
+</html>
